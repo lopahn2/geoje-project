@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = 'utf-8'>
+		<title>거제 해안선 확인결산시스템</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id='login'>
+			<div id='login-container'>
+				<div id='content-container'>
+					<h3>
+						거제지역 해안선 확인 결산 시스템 2.0.0ver
+					</h3>
+					<br>
+					<br>
+					<p>
+						<input id='login-pw' type='password' placeholder='비밀번호'>
+						<button id='login-btn'>
+							로그인
+						</button>
+					</p>
+					<div id='maker'>
+						<p>
+							제 000보병여단 00대대 000
+						</p>
+						<p>
+							제 000보병여단 00대대 000
+						</p>
+						<p>
+							제 000보병여단 00대대 000
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id='flex-container'>
+			<div id='left-nav'>
+				<div id='floating-nav-bar'>
+					<div id='user-helper'>
+						<p class='keyboard-deco'>
+							W
+						</p>로 지도 확대<br>
+						<p class='keyboard-deco'>
+							S
+						</p>로 지도 축소<br>
+						<p class='keyboard-deco'>
+							ESC
+						</p>로 메뉴창 숨기기<br>
+						
+						
+					</div>
+				</div>
+				<div id='operation-container'>
+					<div class='operation-contents'>
+						<p>
+							지형-지물
+						</p>
+						<div class='operation-group'>
+							<div id='harbor-btn' class='operation-filter checked'>
+								항포구
+							</div>
+							<div id='cctv-btn' class='operation-filter checked'>
+								통합관제센터
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id='time-container'>
+					<div id='text-container'>
+						time related content in here
+					</div>
+				</div>
+				<div id='btn-container'>
+					<button id='render-with-filter'>
+						결산
+					</button>
+					<button id='init-filter'>
+						초기화
+					</button>
+				</div>
+				<div id='op-create-open-btn-container'>
+					<button id='op-create-open-btn'>
+						작전 추가창 열기
+					</button>
+				</div>
+				<div id='line-category'>
+					<p id='green-line'>
+						순찰구간 
+					</p>
+					<p id='black-line'>
+						해상구간 
+					</p>
+					<p id='blue-line'>
+						감시구간 
+					</p>
+					<p id='red-line'>
+						취약구간 
+					</p>
+					<p id='grey-line'>
+						절벽구간 
+					</p>
+				</div>
+			</div>
+			<div id='op-create-modal' class='display-none'>
+				<div id='operation-create'>
+					operation create content and UI/UX placed here
+				</div>
+			</div>
+			<div id='map'>
+				<div id='map-picture'></div>
+				<div id='map-border' class='a-red'></div>
+				<div id='map-cliff'></div>
+			</div>
+			<div id='right-nav'>
+				<input id='file-loader' type='file' accept='.json'>
+				<button id='file-saver'>저장</button>
+			</div>
+		</div>
+		<script type='text/javascript' src='js/index.js'></script>
+		<script type='text/javascript' src='js/encrypt/userInfo.js'></script>
+	</body>
+</html>
